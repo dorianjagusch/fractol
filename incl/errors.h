@@ -6,7 +6,7 @@
 /*   By: djagusch <djagusch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 14:57:13 by djagusch          #+#    #+#             */
-/*   Updated: 2023/01/27 16:38:59 by djagusch         ###   ########.fr       */
+/*   Updated: 2023/02/05 15:21:14 by djagusch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,19 +29,19 @@
 # define SHIFT_ERR 14
 
 // Bitmapping image info
-# define NAME_INIT (u_int8_t)0x80
-# define WIN_INIT (u_int8_t)0x40
-# define WIN_WIN_INIT (u_int8_t)0x20
-# define WIN_MLX_INIT (u_int8_t)0x10
-# define FRAC_INIT (u_int8_t)0x08
-# define COLOUR_INIT (u_int8_t)0x04
-# define IMG_INIT (u_int8_t)0x02
-# define ADDR_INIT (u_int8_t)0x01
+# define NAME_INIT 0x80
+# define WIN_INIT 0x40
+# define WIN_WIN_INIT 0x20
+# define WIN_MLX_INIT 0x10
+# define FRAC_INIT 0x08
+# define COLOUR_INIT 0x04
+# define IMG_INIT 0x02
+# define ADDR_INIT 0x01
 
 // Bitmapping window activity
-# define WIN_3 (u_int8_t)0x08
-# define WIN_2 (u_int8_t)0x04
-# define WIN_1 (u_int8_t)0x02
-# define WIN_0 (u_int8_t)0x01
+# define WIN_3 0x08
+# define WIN_2 0x04
+# define WIN_1 0x02
+# define WIN_0 0x01
 
 #endif

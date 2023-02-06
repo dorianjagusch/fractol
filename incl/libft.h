@@ -113,8 +113,8 @@ int		return_null2(int fd);
 // get_next_line
 char	*get_next_line(int fd);
 //MISC
-long		ft_max(long a, long b);
-long		ft_min(long a, long b);
-double		ft_powerf(double x, int exp);
-void		ft_free(void *ptr);
+long	ft_max(long a, long b);
+long	ft_min(long a, long b);
+double	ft_powerf(double x, int exp);
+void	ft_free(void *ptr);
 #endif

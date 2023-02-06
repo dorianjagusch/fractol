@@ -6,12 +6,12 @@
 /*   By: djagusch <djagusch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 14:57:13 by djagusch          #+#    #+#             */
-/*   Updated: 2023/01/12 14:33:34 by djagusch         ###   ########.fr       */
+/*   Updated: 2023/02/05 15:19:58 by djagusch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef EVENT_MACROS_H
-# define EVENT_MACROS_H
+#ifndef MACOS_KEYS_H
+# define MACOS_KEYS_H
 
 //EVENTS
 # define ON_KEYDOWN 2

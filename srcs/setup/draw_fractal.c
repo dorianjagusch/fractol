@@ -6,7 +6,7 @@
 /*   By: djagusch <djagusch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/30 11:57:13 by djagusch          #+#    #+#             */
-/*   Updated: 2023/01/27 15:46:26 by djagusch         ###   ########.fr       */
+/*   Updated: 2023/02/05 16:38:49 by djagusch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,27 +21,30 @@ static void	my_mlx_pixel_put(t_img *img, t_complex pxl, int colour)
 	*(unsigned int *)dst = colour;
 }
 
-int	(*select_fractal(t_img *img))(t_img *img, t_complex coord)
+void	select_fractal(t_img *img)
 {
 	int						i;
-	int						(*fractal)(t_img *img, t_complex coord);
+	int						(*fractal)(t_img *, t_complex);
 	static const t_fractal	fractals[NUM_FRACTALS] = {
 	{"Mandelbrot", &ft_mandelbrot},
 	{"Julia", &ft_julia},
 	{"Burning Ship", &ft_burning_ship},
 	{"Newton", &ft_newton}
 	};
-	static int				lengths[] = {10, 5, 12, 6};
+	static const int		lengths[] = {10, 5, 12, 6};
 
 	i = 0;
 	fractal = NULL;
 	while (i < (sizeof(fractals) / sizeof(t_fractal)))
 	{
 		if (!ft_strncmp(img->fractal->name, fractals[i].name, lengths[i]))
-			return (fractals[(i + img->n_frac) % NUM_FRACTALS].fractal);
+		{
+			fractal = fractals[(i + img->n_frac) % NUM_FRACTALS].fractal;
+			break;
+		}
 		i++;
 	}
-	return (0);
+	img->fractal->fractal = fractal;
 }
 
 int	draw_fractal(t_img *img)

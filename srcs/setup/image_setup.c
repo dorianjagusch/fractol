@@ -6,7 +6,7 @@
 /*   By: djagusch <djagusch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/03 10:57:13 by djagusch          #+#    #+#             */
-/*   Updated: 2023/02/02 14:34:17 by djagusch         ###   ########.fr       */
+/*   Updated: 2023/02/05 16:36:14 by djagusch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ static int	set_image_const(t_img *img, char *av)
 	img->bits |= NAME_INIT;
 	img->n_frac = 0;
 	img->colour_fun->index = 0;
-	img->colour_fun->color_algo = choose_colour(img);
-	img->fractal->fractal = select_fractal(img);
+	choose_colour(img);
+	select_fractal(img);
 	return (0);
 }
 

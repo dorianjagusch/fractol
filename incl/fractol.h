@@ -6,7 +6,7 @@
 /*   By: djagusch <djagusch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 14:57:13 by djagusch          #+#    #+#             */
-/*   Updated: 2023/01/27 16:15:28 by djagusch         ###   ########.fr       */
+/*   Updated: 2023/02/05 16:35:39 by djagusch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,8 @@
 # define COLOUR_CHOICES 10
 # define ZOOM_DEPTH 0.2
 # define ROTATION_INCR 0.05
-# define _2_PI (2 * M_PI)
 
-typedef struct s_range 
+typedef struct s_range
 {
 	double		min;
 	double		max;
@@ -52,8 +51,8 @@ typedef struct s_complex
 	double	im;
 }			t_complex;
 
-struct s_img;
-typedef struct s_img t_img;
+struct					s_img;
+typedef struct s_img	t_img;
 
 typedef struct s_fractal
 {
@@ -103,7 +102,7 @@ typedef struct s_img
 
 //FRACTOL
 int			set_image(t_img *img, char *av);
-void		fractol(t_img **images, int ac, char** av);
+void		fractol(t_img **images, int ac, char **av);
 t_img		**malloc_images_array(int ac);
 void		free_img(t_img *img);
 void		free_images_array(t_img **images, int index, int error);
@@ -133,7 +132,7 @@ void		ft_close(int error);
 int			key_handler(int key, t_img *img);
 
 //FRACTAL FUNCTIONS
-int			(*select_fractal(t_img *img))(t_img *img, t_complex coord);
+void		select_fractal(t_img *img);
 int			draw_fractal(t_img *img);
 int			ft_mandelbrot(t_img *img, t_complex coord);
 int			ft_julia(t_img *img, t_complex coord);
@@ -151,13 +150,13 @@ double		ft_cmag(t_complex c);
 double		ft_cmag2(t_complex c);
 double		ft_ccum_sumf(t_complex *array, int length, double (*f)(t_complex));
 
-
 //COLOUR FUNCTIONS
 int			get_t(int trgb);
 int			create_trgb(t_colour colour);
 int			get_r(int trgb);
 int			get_g(int trgb);
 int			get_b(int trgb);
+void		choose_colour(t_img *img);
 int			calc_colour(t_img *img, int iter);
 int			calc_colour2(t_img *img, int iter);
 int			calc_colour3(t_img *img, int iter);
@@ -168,9 +167,8 @@ int			calc_colour7(t_img *img, int iter);
 int			calc_colour8(t_img *img, int iter);
 int			calc_bw_band(t_img *img, int iter);
 int			calc_bw(t_img *img, int iter);
-int			(*choose_colour(t_img *img))(t_img *, int);
 
-// Miscelaneous
+// Miscellaneous
 double		ft_neg_exp(t_complex z);
 double		ft_fmodf(double a, double b);
 t_range		ft_lerp(double p, t_range val, double param);

@@ -6,17 +6,15 @@
 /*   By: djagusch <djagusch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 11:57:13 by djagusch          #+#    #+#             */
-/*   Updated: 2023/01/27 16:15:17 by djagusch         ###   ########.fr       */
+/*   Updated: 2023/02/05 16:37:39 by djagusch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fractol.h"
 
-//from https://www.sekinoworld.com/fractal/coloring.htm
-
-int	(*choose_colour(t_img *img))(t_img *img, int iter)
+void	choose_colour(t_img *img)
 {
-	static const t_col_coices	colour_funs [COLOUR_CHOICES] = {
+	static const t_col_coices	colour_funs[COLOUR_CHOICES] = {
 	{0, &calc_colour},
 	{1, &calc_colour2},
 	{2, &calc_colour3},
@@ -28,10 +26,12 @@ int	(*choose_colour(t_img *img))(t_img *img, int iter)
 	{8, &calc_bw},
 	{9, &calc_bw_band}
 	};
+	int							(*colour)(t_img *, int);
 
 	if (img->colour_fun->index < 0)
-		img->colour_fun->index = 14;
-	return (colour_funs[img->colour_fun->index % COLOUR_CHOICES].color_algo);
+		img->colour_fun->index = COLOUR_CHOICES - 1;
+	colour = colour_funs[img->colour_fun->index % COLOUR_CHOICES].color_algo;
+	img->colour_fun->color_algo = colour;
 }
 
 int	calc_colour(t_img *img, int iter)
