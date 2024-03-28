@@ -75,11 +75,11 @@ Fractol offers several features, including:
 - Multiple fractal sets, including the Mandelbrot and Julia sets (bonus: Newton fractal and Burning Ship fractal).
 - Customizable color palettes for stunning visual effects.
   
-    <img src="https://github.com/dorianjagusch/fractol/blob/master/assets/videos/mandelbrot_colour.gif" height=200px>
+    <img src="https://github.com/dorianjagusch/fractol/blob/master/assets/videos/mandelbrot_colour.gif" height=300px>
     
 - Interactive controls for zooming, panning, and exploring the fractals.
 
-   <img src="https://github.com/dorianjagusch/fractol/blob/master/assets/videos/mandelbrot_detail.gif" height=200px>
+   <img src="https://github.com/dorianjagusch/fractol/blob/master/assets/videos/mandelbrot_detail.gif" height=300px>
   
 - Rotation of the fractal around an arbitrary point
 
