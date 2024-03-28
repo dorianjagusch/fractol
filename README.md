@@ -1,6 +1,6 @@
 # Fractol
 
-<img src="assets/imgs/burningship_fractal.png" width=30%> <img src="assets/imgs/julia_fractal.png" width=30%>
+<img src="assets/imgs/burningship_fractal.png" width=30%  align="center"> <img src="assets/imgs/julia_fractal.png" width=30%  align="center">
 
 <img src="assets/imgs/mandelbrot_zoomed.png" width=25% align="center"> <img src="assets/imgs/newton_fratal.png" width=25% align="center"> <img src="assets/imgs/help_menu.png" width=25% align="center">
 
