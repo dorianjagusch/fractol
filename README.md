@@ -68,14 +68,20 @@ Use the mouse and keyboard controls to navigate, zoom, and interact with the fra
 
 Fractol offers several features, including:
 
-    Real-time zooming and navigation in fractal sets until computational limits are reached.
+- Real-time zooming and navigation in fractal sets until computational limits are reached.
+    
   <video src="assets/videos/burningship_zoom.mov" width=180/>
   <video src="assets/videos/julia_mouse_move.mov" width=180/> 
-    Multiple fractal sets, including the Mandelbrot and Julia sets (bonus: Newton fractal and Burning Ship fractal).
-    Customizable color palettes for stunning visual effects.
+  
+- Multiple fractal sets, including the Mandelbrot and Julia sets (bonus: Newton fractal and Burning Ship fractal).
+- Customizable color palettes for stunning visual effects.
+  
   <video src="assets/videos/mandelbrot_colour.mov" width=180/>
-    Interactive controls for zooming, panning, and exploring the fractals.
-  <video src="assets/videos/mandelbrot_detail.mov" width=180/">
-    Rotation of the fractal around an arbitrary point
+  
+- Interactive controls for zooming, panning, and exploring the fractals.
+
+ [assets/videos/mandebrot_detail.mov](https://github.com/dorianjagusch/fractol/blob/master/assets/videos/mandebrot_detail.mov)
+
+- Rotation of the fractal around an arbitrary point
 
 Explore the features and unleash your creativity in the world of fractals.
