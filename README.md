@@ -1,5 +1,11 @@
 # Fractol
 
+<img src="https://github.com/dorianjagusch/fractol/blob/master/assets/imgs/burningship_fractal.png" width=30%> 
+<img src="https://github.com/dorianjagusch/fractol/blob/master/assets/imgs/julia_fractal.png" width=30%>
+<br />
+<img src="https://github.com/dorianjagusch/fractol/blob/master/assets/imgs/mandelbrot_fractal.png" width=30%>
+<img src="https://github.com/dorianjagusch/fractol/blob/master/assets/imgs/newton_fractal.png" width=30%>
+
 ## Table of Contents
 - [Project Description](#project-description)
 - [Project Requirements](#project-requirements)
