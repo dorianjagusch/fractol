@@ -69,7 +69,7 @@ Use the mouse and keyboard controls to navigate, zoom, and interact with the fra
 Fractol offers several features, including:
 
 - Real-time zooming and navigation in fractal sets until computational limits are reached.
-  <div width=50%>
+  <div>
     ![](https://github.com/dorianjagusch/fractol/blob/master/assets/videos/burningship_zoom.gif)
   </div>
   <div width=50%>
