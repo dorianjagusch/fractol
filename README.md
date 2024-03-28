@@ -1,10 +1,8 @@
 # Fractol
 
-<img src="https://github.com/dorianjagusch/fractol/blob/master/assets/imgs/burningship_fractal.png" width=30%> 
-<img src="https://github.com/dorianjagusch/fractol/blob/master/assets/imgs/julia_fractal.png" width=30%>
-<br />
-<img src="https://github.com/dorianjagusch/fractol/blob/master/assets/imgs/mandelbrot_fractal.png" width=30%>
-<img src="https://github.com/dorianjagusch/fractol/blob/master/assets/imgs/newton_fractal.png" width=30%>
+<img src="assets/imgs/burningship_fractal.png" width=30%> <img src="assets/imgs/julia_fractal.png" width=30%>
+
+<img src="assets/imgs/mandelbrot_zoomed.png" width=25% align="center"> <img src="assets/imgs/newton_fratal.png" width=25% align="center"> <img src="assets/imgs/help_menu.png" width=25% align="center">
 
 ## Table of Contents
 - [Project Description](#project-description)
