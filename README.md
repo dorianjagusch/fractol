@@ -79,7 +79,7 @@ Fractol offers several features, including:
     
 - Interactive controls for zooming, panning, and exploring the fractals.
 
-   <img src="https://github.com/dorianjagusch/fractol/blob/master/assets/videos/mandelbrot_detail.gif" height=300px>
+   <img src="https://github.com/dorianjagusch/fractol/blob/master/assets/videos/mandebrot_detail.gif" height=300px>
   
 - Rotation of the fractal around an arbitrary point
 
